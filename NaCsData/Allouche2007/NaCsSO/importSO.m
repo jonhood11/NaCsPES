@@ -135,7 +135,8 @@ str(4) = " 476 -1 0 0               % NTP LPPOT IOMEG VLIM";
 str(5) = " -1 0 3 6 0.D5            % NUSE IR2 ILR NCN CNN";
 str(6) = " 1D0 1D0 0.d0             % RFACT EFACT VSHIFT";
 % turning points 
-str2(1) =" -1000 1 0 0 0 0 -0 -1 % NLEV1 AUTO1 LCDC LXPCT NJM JDJR IWR LPRWF";
+str2(1) =" -1000 1 0 0 0 0 -0 -1    % NLEV1 AUTO1 LCDC LXPCT NJM JDJR IWR LPRWF";
+str2(2) =" 0 0                      % IV(1) IJ(1)"; %not sure about this. 
 
 fileID = fopen('dataLEVELSO0p.txt','w');
 fprintf(fileID, '%s\n',str)
