@@ -6,7 +6,8 @@
 h = 219474.6313702;  %1 hartree in cm^-1
 au =  0.52917721067; %1 a0 =  5.2917721067e?11 m
 
-path = 'C:\Users\jonho\OneDrive\LEVEL16\NaCs SMs\Allouche2007\NaCsSO\';
+%path = 'C:\Users\jonho\OneDrive\LEVEL16\NaCs SMs\Allouche2007\NaCsSO\';
+path = '';
 delimiter = '\t';
 
 %SO+
@@ -56,7 +57,7 @@ dataSO3 = dataArray;
 
 %% Plot all PES
 os = min( dataSO0p{2} )*h;
-figure;
+figure; set(gcf,'color','w');
 hold on;
 
 data = dataSO0m;
@@ -91,8 +92,7 @@ title('Korek 2007 NaCs with SO Theory');
 
 %% Plot ground and 6Cs PES
 os = min( dataSO0p{2} )*h;
-%figure;
-set(gcf,'color','w');
+figure; set(gcf,'color','w');
 colors = get(gca,'colororder');
 clf;
 hold on;
@@ -134,14 +134,15 @@ str(3) = " 0.001 1.6 99. 1.d-06     % RH RMIN RMAX EPS";
 str(4) = " 476 -1 0 0               % NTP LPPOT IOMEG VLIM";
 str(5) = " -1 0 3 6 0.D5            % NUSE IR2 ILR NCN CNN";
 str(6) = " 1D0 1D0 0.d0             % RFACT EFACT VSHIFT";
-% % turning points 
-str2(1) =" -1000 1 0 0 0 0 -0 -1 0 0 % NLEV1 AUTO1 LCDC LXPCT NJM JDJR IWR LPRWF";
+% turning points 
+str2(1) =" -1000 1 0 0 0 0 -0 -1 % NLEV1 AUTO1 LCDC LXPCT NJM JDJR IWR LPRWF";
 
-fileID = fopen('dataLEVELtest.txt','w');
+fileID = fopen('dataLEVELSO0p.txt','w');
 fprintf(fileID, '%s\n',str)
 fprintf(fileID, '  %f %f \n', dataArray );  %define turning points for LEVEL
+fprintf(fileID, '\n', dataArray );  
 fprintf(fileID, '%s\n',str2)
-
+fprintf(fileID, '\n', dataArray );  
 fclose(fileID);
 
 
