@@ -1,0 +1,159 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++
++   Supplementary data for
++
++   The coupling of the X1Sigma+ and a3Sigma+ states of the atom pair Na + Cs
++   and modelling cold collisions
++
++   O Docenko, M Tamanis, J Zaharova, R Ferber, A Pashov, H Knoeckel and E Tiemann
++   2006 J. Phys. B: At. Mol. Opt. Phys. 39 S929-S943
++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++
++   O Docenko, M Tamanis, J Zaharova, R Ferber
++   Department of Physics and Institute of Atomic Physics and Spectroscopy,
++   University of Latvia, Rainis Boulevard 19, LV 1586 Riga, Latvia
++
++   A Pashov
++   Department of Physics, Sofia University, James Bourchier Boulevard 5, 1164
++   Sofia, Bulgaria
++
++   H Knoeckel and E Tiemann
++   Institut fuer Quantenoptik, Universitaet Hannover, Welfengarten 1,
++   30167 Hannover, Germany
++
++   October 2004, October 2005 Hannover
++  
++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++
++   Supplementary material, Part 4
++
++   Potential energy curves of the a3Sigma+ and X1Sigma+ states of NaCs	
++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Atomic masses used:
+
+Na  22.9897692807 amu 
+Cs  132.9054519316 amu
+                  
+Potentials are given with respect to the dissociation limit which is set to 0!
+
+--------------------------------------------------------------------------
+Analytic potential energy curve for the NaCs X1Sigma+ state
+
+
+For R <= 2.8435 A
+
+U(R)=A+B/R^3
+
+A 	-1.21078258E+04 cm-1
+B 	2.78126476E+05 cm-1A^3
+
+-----------------------------------
+For 2.8435 < R < 10.20 A
+
+U(R)=Sum_i[a_i*((R-R_m)/(R+b*R_m))^i]
+
+
+b	-0.4000
+R_m	3.85062906 A
+
+All a_i parameters are in cm-1
+
+a_0	 -4954.2371	
+a_1 	 0.898622630664361211E+00 
+a_2 	 0.151732217891396431E+05 
+a_3	 0.109102058285656531E+05
+a_4	-0.245830537231665448E+04
+a_5	-0.160823217089854061E+05
+a_6	-0.870501233606598180E+04
+a_7	 0.218804990209799216E+05
+a_8	-0.300253857509134803E+06
+a_9	-0.786934963816004456E+06
+a_10	 0.339616569903816981E+07
+a_11	 0.735840978670415096E+07
+a_12	-0.263747841089096293E+08
+a_13	-0.445851022516661808E+08
+a_14	 0.135133668337616146E+09
+a_15	 0.176262771092477173E+09
+a_16	-0.475687819616745651E+09
+a_17	-0.447488331948895991E+09
+a_18	 0.121600043788157034E+10
+a_19	 0.746075686887681842E+09
+a_20	-0.229173358027149439E+10
+a_21	-0.870893701850213766E+09
+a_22	 0.309544152674965858E+10
+a_23	 0.819954477849331141E+09
+a_24	-0.280675451799400091E+10
+a_25	-0.696373131358783245E+09
+a_26	 0.151653591696465230E+10
+a_27	 0.444558275107226551E+09
+a_28	-0.366990899674986184E+09
+a_29	-0.135243476249383062E+09
+
+------------------------------------
+
+For R>=10.20 A
+
+U(R)=-C_6\R^6-C_8\R^8-C_10\R^10-A_ex*R^gamma*exp(-beta*R)
+
+C_6  1.555214E+07 cm^-1 A^6 
+C_8  4.967239E+08 cm^-1 A^8  
+C_10 1.971387E+10 cm^-1 A^10
+
+A_ex   2.549087E+04 cm-1 A^(-gamma)
+gamma  5.12271	
+beta   2.17237 A^-1  
+-------------------------------------------------------------------------------
+
+Analytic potential energy curve for the NaCs a3Sigma+ state
+
+
+For R <= 4.78 A
+
+U(R)=A+B/R^3
+
+A 	 -1.47429182E+03 cm-1
+B 	1.60029429E+05  cm-1A^3
+
+-----------------------------------
+For 4.78 < R < 10.20 A
+
+U(R)=Sum_i[a_i*((R-R_m)/(R+b*R_m))^i]
+
+b	-0.6400
+R_m	5.75585938 A
+
+All a_i parameters are in cm-1
+
+a_0	-217.1544
+a_1 	 0.506003697108497441E+01
+a_2 	 0.471868074288336629E+03
+a_3 	 0.251421896658343968E+03
+a_4	-0.874623764194756603E+02
+a_5	-0.215412551480785680E+03
+a_6	-0.237001094676986327E+03
+a_7	-0.597552181866083515E+03
+a_8	-0.476013801913782288E+03
+a_9	 0.378229284864475233E+03
+a_10	 0.679827008567800476E+03
+a_11	 0.672327249787527307E+03
+a_12	-0.124756939670013161E+02
+a_13	-0.462561066282073739E+03
+
+------------------------------------
+
+For R>=10.20 A
+
+U(R)=-C_6\R^6-C_8\R^8-C_10\R^10+A_ex*R^gamma*exp(-beta*R)
+
+C_6  1.555214E+07 cm^-1 A^6 
+C_8  4.967239E+08 cm^-1 A^8  
+C_10 1.971387E+10 cm^-1 A^10
+
+A_ex   2.549087E+04 cm-1 A^(-gamma)
+gamma  5.12271	
+beta   2.17237 A^-1  
+-----------------------------------------------------------------------------------
